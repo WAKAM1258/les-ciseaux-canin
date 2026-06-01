@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Ciseaux Canins | Salon de Toilettage d'Élite & Spa à Nîmes</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Découvrez Les Ciseaux Canins à Nîmes, géré par Manon Sarrus. Toilettage d'exception, soins de haute technicité (épilation, coupe ciseaux) & rituels Spa premium pour chiens. Réservez en ligne.">
+    <meta name="keywords" content="Toilettage Nîmes, Spa Canin Nîmes, Épilation Chien Nîmes, Toiletteur Gard, Coupe Ciseaux Chien, Les Ciseaux Canins, Manon Sarrus, Toilettage d'exception">
+    
+    <!-- Open Graph (Facebook) -->
+    <meta property="og:title" content="Les Ciseaux Canins | Salon de Toilettage d'Élite & Spa à Nîmes">
+    <meta property="og:description" content="Toilettage de prestige, rituels spa bio et coupes techniques. Prenez rendez-vous en ligne pour votre compagnon.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.lesciseauxcanins-nimes.fr">
+    <meta property="og:image" content="images/grooming_tools_spa.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Leaflet.js (Map) CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Schema.org JSON-LD LocalBusiness for local SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "GroomingSalon",
+      "name": "Les Ciseaux Canins",
+      "image": "images/grooming_tools_spa.png",
+      "priceRange": "$$",
+      "telephone": "+33 4 00 00 00 00",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "12 Rue de la République",
+        "addressLocality": "Nîmes",
+        "postalCode": "30000",
+        "addressCountry": "FR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 43.836699,
+        "longitude": 4.360054
+      },
+      "url": "https://www.lesciseauxcanins-nimes.fr",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:30",
+        "closes": "17:30"
+      },
+      "sameAs": [
+        "https://www.facebook.com/LesCiseauxCanins"
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#accueil" class="logo" id="logoLink">
+                <span class="logo-accent">Les Ciseaux</span> Canins
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="#accueil" class="nav-link active">Accueil</a>
+                <a href="#apropos" class="nav-link">Le Salon</a>
+                <a href="#soins" class="nav-link">Soins & Tarifs</a>
+                <a href="#galerie" class="nav-link">Avant/Après & Actus</a>
+                <a href="#communaute" class="nav-link">Communauté</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <a href="#reservation" class="btn btn-primary btn-nav-cta">Prendre RDV</a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Ouvrir le menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section Hero -->
+        <section id="accueil" class="hero-section">
+            <div class="hero-bg-overlay"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-badge">Spa & Toilettage d'Élite</span>
+                    <h1 class="hero-title">L'Art du Toilettage<br><span class="highlight-serif">d'Exception</span> à Nîmes</h1>
+                    <p class="hero-subtitle">Respect, Douceur & Cosmétique Premium pour votre Compagnon. Confiez-le à une experte passionnée depuis 2015.</p>
+                    <div class="hero-actions">
+                        <a href="#reservation" class="btn btn-primary btn-large">Réserver mon Soin en Ligne</a>
+                        <a href="#soins" class="btn btn-secondary btn-large">Découvrir les Tarifs</a>
+                    </div>
+                    <div class="hero-features">
+                        <div class="hero-feature-item">
+                            <i class="fa-solid fa-award"></i>
+                            <span>Expertise Certifiée</span>
+                        </div>
+                        <div class="hero-feature-item">
+                            <i class="fa-solid fa-heart"></i>
+                            <span>Zéro Force / Douceur</span>
+                        </div>
+                        <div class="hero-feature-item">
+                            <i class="fa-solid fa-soap"></i>
+                            <span>Cosmétiques Bio</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-image-wrapper">
+                        <img src="images/grooming_tools_spa.png" alt="Toilettage de précision et cosmétiques haut de gamme" class="hero-image">
+                        <div class="hero-floating-card">
+                            <div class="floating-icon"><i class="fa-brands fa-facebook-f"></i></div>
+                            <div class="floating-text">
+                                <span class="floating-number">77 000+</span>
+                                <span class="floating-label">Abonnés Facebook</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="wave-divider">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C26.9,8.75,57.05,18.3,88.43,26.85,153.25,44.57,219,55.53,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Section Qui Sommes-Nous -->
+        <section id="apropos" class="about-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Une Équipe Dévouée</span>
+                    <h2 class="section-title">L'Âme des Ciseaux Canins</h2>
+                    <p class="section-lead">Une expertise acquise au fil des années, alliant savoir-faire d'excellence et douceur absolue pour le bien-être de votre animal.</p>
+                </div>
+                
+                <div class="about-grid">
+                    <!-- Photo de Groupe Réelle -->
+                    <div class="about-photo-wrapper">
+                        <img src="images/team_salon.png" alt="L'équipe des Ciseaux Canins : Manon, Aurélie et notre troisième toiletteuse" class="about-photo">
+                    </div>
+                    
+                    <!-- Liste des Profils de l'Équipe -->
+                    <div class="team-profiles-list">
+                        <!-- Profil 1: Manon Sarrus -->
+                        <div class="profile-list-item">
+                            <div class="profile-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                            <div class="profile-details">
+                                <div class="profile-header-meta">
+                                    <h4 class="profile-title">Manon Sarrus</h4>
+                                    <span class="profile-tag">Gérante & Toiletteuse Experte</span>
+                                </div>
+                                <p class="profile-description">Fondatrice du salon Les Ciseaux Canins depuis 2015. Spécialiste du toilettage technique de haute précision, des coupes ciseaux d'art et des protocoles de soins de peau complexes. [Description biographique supplémentaire à remplir]</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Profil 2: Aurélie -->
+                        <div class="profile-list-item">
+                            <div class="profile-avatar"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div class="profile-details">
+                                <div class="profile-header-meta">
+                                    <h4 class="profile-title">Aurélie</h4>
+                                    <span class="profile-tag">Apprentie en Reconversion</span>
+                                </div>
+                                <p class="profile-description">En reconversion professionnelle et formation intensive au salon depuis début 2026. Douce et attentive, elle s'occupe avec soin de la préparation, des bains physiologiques et des soins de bien-être. [Description biographique supplémentaire à remplir]</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Profil 3: Toiletteuse à remplir -->
+                        <div class="profile-list-item profile-to-fill">
+                            <div class="profile-avatar avatar-placeholder"><i class="fa-solid fa-user-plus"></i></div>
+                            <div class="profile-details">
+                                <div class="profile-header-meta">
+                                    <h4 class="profile-title">Profil 3 — À remplir</h4>
+                                    <span class="profile-tag tag-placeholder">Poste à définir</span>
+                                </div>
+                                <p class="profile-description description-placeholder">Cet espace est réservé pour le profil de la troisième professionnelle visible sur la photo de groupe. À compléter avec son nom, son parcours, son rôle et ses spécialités au salon.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Engagements (Nos Valeurs) -->
+        <section class="commitments-section">
+            <div class="container">
+                <div class="commitments-wrapper">
+                    <div class="commitments-info">
+                        <span class="section-tag-light">Nos Fondations</span>
+                        <h2 class="section-title text-white">Nos Engagements d'Excellence</h2>
+                        <p class="text-light">Nous ne pratiquons pas un toilettage à la chaîne. Chaque animal bénéficie d'une attention sur-mesure et d'un accompagnement basé sur la psychologie canine positive.</p>
+                        
+                        <div class="commitment-item">
+                            <div class="commitment-icon"><i class="fa-solid fa-ban"></i></div>
+                            <div>
+                                <h4 class="commitment-title">Zéro Contrainte & Zéro Force</h4>
+                                <p class="commitment-desc">Nous travaillons au rythme du chien. Si un chien a peur ou fatigue, nous faisons des pauses. Jamais de contrainte physique douloureuse.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="commitment-item">
+                            <div class="commitment-icon"><i class="fa-solid fa-leaf"></i></div>
+                            <div>
+                                <h4 class="commitment-title">Cosmétiques 100% Naturels & Bio</h4>
+                                <p class="commitment-desc">Tous nos shampooings et masques sont formulés sans sulfates, sans parabènes, respectant le pH spécifique de la peau canine.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="commitment-item">
+                            <div class="commitment-icon"><i class="fa-solid fa-handshake-angle"></i></div>
+                            <div>
+                                <h4 class="commitment-title">Engagement Cause Animale</h4>
+                                <p class="commitment-desc">Nous parrainons des refuges locaux à Nîmes, offrant gracieusement des séances de remise en état pour les chiens à l'adoption.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="commitments-decor">
+                        <img src="images/shampoo_bottles_premium.png" alt="Gamme de soins et cosmétiques organiques" class="decor-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Pourquoi Nous Choisir -->
+        <section class="why-us-section">
+            <div class="container">
+                <div class="why-grid">
+                    <div class="why-card">
+                        <div class="why-icon-box"><i class="fa-solid fa-scissors"></i></div>
+                        <h3>Technicité toutes races</h3>
+                        <p>Du petit Teckel au grand Leonberg de 80kg, nous maîtrisons les techniques adaptées à chaque gabarit et pelage complexe.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon-box"><i class="fa-solid fa-spa"></i></div>
+                        <h3>Protocoles Spa Exclusifs</h3>
+                        <p>Des soins dermatologiques poussés comprenant bain hydromassant, masques de boue thermale et huiles essentielles protectrices.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon-box"><i class="fa-solid fa-shield-cat"></i></div>
+                        <h3>Transparence Totale</h3>
+                        <p>Chez nous, pas de salle cachée. Vous pouvez observer nos méthodes et nous vous expliquons chaque soin en détail.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Soins & Tarifs -->
+        <section id="soins" class="services-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Une Expérience Unique</span>
+                    <h2 class="section-title">Nos Collections de Soins</h2>
+                    <p class="section-lead">Des protocoles sur-mesure pour soigner la peau, magnifier le pelage et offrir un moment de pure relaxation.</p>
+                </div>
+                
+                <!-- Services Navigation Tabs -->
+                <div class="services-tabs">
+                    <button class="tab-btn active" data-tab="spa">Collections Spa Premium</button>
+                    <button class="tab-btn" data-tab="technique">Toilettage Technique</button>
+                    <button class="tab-btn" data-tab="calculateur">Simulateur de Tarifs</button>
+                </div>
+                
+                <!-- Tab Contents -->
+                <div class="tab-container">
+                    <!-- Tab 1: Spa Premium -->
+                    <div class="tab-content active" id="tab-spa">
+                        <div class="spa-layout">
+                            <div class="spa-steps-cards">
+                                <div class="spa-step-card">
+                                    <div class="step-num">01</div>
+                                    <div class="step-details">
+                                        <h4>Masque Bioénergy & Détox</h4>
+                                        <p>Application d'un masque enrichi en oligo-éléments et vitamines pour détoxifier le derme et nourrir le poil en profondeur.</p>
+                                    </div>
+                                </div>
+                                <div class="spa-step-card">
+                                    <div class="step-num">02</div>
+                                    <div class="step-details">
+                                        <h4>Bain Aquapure & Massage</h4>
+                                        <p>Bain massant à bulles avec eau tempérée filtrée. Utilisation de shampooings d'exception adaptés au type de poil.</p>
+                                    </div>
+                                </div>
+                                <div class="spa-step-card">
+                                    <div class="step-num">03</div>
+                                    <div class="step-details">
+                                        <h4>Senteur Délicate "Peach Blossom"</h4>
+                                        <p>Une brume de soin relaxante parfumée à la fleur de pêcher, formulée spécifiquement pour ne pas perturber l'odorat du chien.</p>
+                                    </div>
+                                </div>
+                                <div class="spa-step-card">
+                                    <div class="step-num">04</div>
+                                    <div class="step-details">
+                                        <h4>Hydratation aux 4 Huiles Précieuses</h4>
+                                        <p>Huiles d'argan, de coco, de jojoba et d'amande douce pour sceller l'hydratation cutanée et redonner une brillance miroir.</p>
+                                    </div>
+                                </div>
+                                <div class="spa-step-card">
+                                    <div class="step-num">05</div>
+                                    <div class="step-details">
+                                        <h4>Finition Aquabeauty</h4>
+                                        <p>Séchage doux à température régulée, brushing minutieux et soin protecteur pour les coussinets et la truffe.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="spa-showcase-card">
+                                <div class="spa-showcase-badge">Formule Tout Inclus</div>
+                                <h3>L'Expérience Bien-être Absolu</h3>
+                                <p class="spa-showcase-desc">Idéal pour les chiens stressés, fatigués, les peaux sensibles ou tout simplement pour offrir une cure de beauté prestigieuse à votre compagnon.</p>
+                                <div class="spa-price-box">
+                                    <span class="price-label">À partir de</span>
+                                    <span class="price-val">65€</span>
+                                </div>
+                                <ul class="spa-features-list">
+                                    <li><i class="fa-solid fa-circle-check"></i> Masque Bioénergy sur-mesure</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Bain Massant Aquapure</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Hydratation profonde 4 huiles</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Brushing & finitions d'art</li>
+                                </ul>
+                                <a href="#reservation" class="btn btn-primary btn-full-width text-center">Réserver ce Protocole</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tab 2: Toilettage Technique -->
+                    <div class="tab-content" id="tab-technique">
+                        <div class="technical-grid">
+                            <div class="tech-card">
+                                <div class="tech-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                                <h3>Épilation (Handstripping)</h3>
+                                <p>Soin technique minutieux consistant à retirer le poil mort à la main pour les races à poil dur (Cockers, Schnauzers, Terriers). Préserve la couleur naturelle, la dureté et l'imperméabilité du pelage.</p>
+                                <div class="tech-duration"><i class="fa-regular fa-clock"></i> Durée indicative : 2h30 - 4h00</div>
+                                <div class="tech-price">À partir de 85€</div>
+                            </div>
+                            
+                            <div class="tech-card">
+                                <div class="tech-icon"><i class="fa-solid fa-scissors"></i></div>
+                                <h3>Coupe aux Ciseaux d'Art</h3>
+                                <p>Coupes de précision entièrement réalisées aux ciseaux pour sculpter la silhouette de votre compagnon selon les standards de race ou une coupe "nounours" moderne et personnalisée.</p>
+                                <div class="tech-duration"><i class="fa-regular fa-clock"></i> Durée indicative : 1h30 - 2h30</div>
+                                <div class="tech-price">À partir de 60€</div>
+                            </div>
+                            
+                            <div class="tech-card">
+                                <div class="tech-icon"><i class="fa-solid fa-dog"></i></div>
+                                <h3>Grands Gabarits & Pelages Complexes</h3>
+                                <p>Prise en charge spécialisée pour les chiens de grande taille (Leonberg, Terre-Neuve, Laïka, Berger Allemand). Désépaississage, démêlage en douceur et gestion du sous-poil massif.</p>
+                                <div class="tech-duration"><i class="fa-regular fa-clock"></i> Durée indicative : 2h00 - 3h30</div>
+                                <div class="tech-price">À partir de 95€</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tab 3: Simulateur de Tarifs -->
+                    <div class="tab-content" id="tab-calculateur">
+                        <div class="calculator-card">
+                            <h3>Estimez le Tarif de votre Soin</h3>
+                            <p class="calculator-intro">Sélectionnez la taille de votre chien et la catégorie de prestation pour obtenir une estimation tarifaire transparente.</p>
+                            
+                            <div class="calc-form">
+                                <div class="form-group">
+                                    <label>1. Taille / Catégorie du Chien</label>
+                                    <div class="calc-options-grid" id="calc-dog-sizes">
+                                        <button type="button" class="calc-opt-btn active" data-size="small" data-factor="1.0">
+                                            <i class="fa-solid fa-dog icon-size-s"></i>
+                                            <span>Petit</span>
+                                            <small>Ex: Yorkshire, Teckel, Bichon</small>
+                                        </button>
+                                        <button type="button" class="calc-opt-btn" data-size="medium" data-factor="1.3">
+                                            <i class="fa-solid fa-dog icon-size-m"></i>
+                                            <span>Moyen</span>
+                                            <small>Ex: Cocker, Cavalier King Charles</small>
+                                        </button>
+                                        <button type="button" class="calc-opt-btn" data-size="large" data-factor="1.8">
+                                            <i class="fa-solid fa-dog icon-size-l"></i>
+                                            <span>Grand</span>
+                                            <small>Ex: Golden Retriever, Setter</small>
+                                        </button>
+                                        <button type="button" class="calc-opt-btn" data-size="giant" data-factor="2.4">
+                                            <i class="fa-solid fa-dog icon-size-xl"></i>
+                                            <span>Géant</span>
+                                            <small>Ex: Leonberg, Terre-Neuve</small>
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group mt-20">
+                                    <label>2. Formule ou Type de Soin</label>
+                                    <div class="calc-options-grid" id="calc-services">
+                                        <button type="button" class="calc-opt-btn active" data-base="45" data-desc="Bain, hygiène, tonte ou coupe simple des contours.">
+                                            <i class="fa-solid fa-bath"></i>
+                                            <span>Entretien Standard</span>
+                                            <small>Dès 45€ (Base)</small>
+                                        </button>
+                                        <button type="button" class="calc-opt-btn" data-base="65" data-desc="Toutes les étapes du Spa : masque, massage, Peach Blossom, hydratation 4 huiles.">
+                                            <i class="fa-solid fa-spa"></i>
+                                            <span>Protocole Spa Premium</span>
+                                            <small>Dès 65€ (Base)</small>
+                                        </button>
+                                        <button type="button" class="calc-opt-btn" data-base="75" data-desc="Coupe aux ciseaux d'art sur-mesure ou épilation technique de la robe.">
+                                            <i class="fa-solid fa-scissors"></i>
+                                            <span>Coupe Ciseaux & Épilation</span>
+                                            <small>Dès 75€ (Base)</small>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="calc-result-box">
+                                <div class="calc-result-info">
+                                    <h4>Estimation de Tarif</h4>
+                                    <p id="calc-service-desc">Bain, hygiène, tonte ou coupe simple des contours.</p>
+                                </div>
+                                <div class="calc-price-wrap">
+                                    <span class="calc-estimated-price" id="calc-result-price">45€</span>
+                                    <span class="price-disclaimer">*Tarif affiné en salon selon l'état du pelage.</span>
+                                </div>
+                            </div>
+                            <div class="text-center mt-20">
+                                <a href="#reservation" class="btn btn-primary" id="calc-booking-cta">Réserver ce Soin en Ligne</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Avant/Après & Actualités -->
+        <section id="galerie" class="gallery-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Transparence & Résultats</span>
+                    <h2 class="section-title">Métamorphoses & Actualités</h2>
+                    <p class="section-lead">Parcourez le quotidien du salon, les dernières annonces et le résultat concret de nos soins en images.</p>
+                </div>
+                
+                <!-- Interactive Before/After Comparison Slider -->
+                <div class="comparison-card">
+                    <div class="comparison-header">
+                        <h3>Zoom sur une Métamorphose</h3>
+                        <p>Glissez le curseur central de gauche à droite pour apprécier le travail de précision sur ce Cocker Anglais (Épilation technique + Spa).</p>
+                    </div>
+                    
+                    <div class="before-after-slider-container" id="baSlider">
+                        <div class="ba-image-wrapper before-image-wrapper">
+                            <div class="ba-fallback before-fallback font-serif">Avant</div>
+                            <img src="images/cocker_before.jpg" alt="Chien avant le toilettage" class="ba-img">
+                            <span class="ba-label before-label">Avant (Poil mort & terne)</span>
+                        </div>
+                        <div class="ba-image-wrapper after-image-wrapper" id="afterImageWrapper">
+                            <div class="ba-fallback after-fallback font-serif">Après</div>
+                            <img src="images/cocker_after.jpg" alt="Chien après le toilettage" class="ba-img">
+                            <span class="ba-label after-label">Après (Épilation & Rituel Spa)</span>
+                        </div>
+                        <div class="ba-handle" id="baHandle">
+                            <div class="ba-handle-line"></div>
+                            <div class="ba-handle-button">
+                                <i class="fa-solid fa-arrows-left-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Filterable Gallery -->
+                <div class="gallery-wrapper mt-40">
+                    <div class="gallery-filters">
+                        <button class="filter-btn active" data-filter="all">Toutes les réalisations</button>
+                        <button class="filter-btn" data-filter="ciseaux">Coupe Ciseaux</button>
+                        <button class="filter-btn" data-filter="epilation">Épilation</button>
+                        <button class="filter-btn" data-filter="spa">Soins Spa</button>
+                        <button class="filter-btn" data-filter="grands">Grands Gabarits</button>
+                    </div>
+                    
+                    <div class="gallery-grid" id="galleryGrid">
+                        <!-- Poodle Ciseaux -->
+                        <div class="gallery-item" data-category="ciseaux">
+                            <div class="gallery-card">
+                                <div class="gallery-image-box">
+                                    <div class="gallery-img-fallback font-serif">Caniche</div>
+                                    <img src="images/gallery_poodle.jpg" alt="Caniche Royal coupe ciseaux" class="gallery-img">
+                                </div>
+                                <div class="gallery-meta">
+                                    <h4>Caniche Royal</h4>
+                                    <span class="gallery-tag">Coupe Ciseaux d'Art</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Schnauzer Epilation -->
+                        <div class="gallery-item" data-category="epilation">
+                            <div class="gallery-card">
+                                <div class="gallery-image-box">
+                                    <div class="gallery-img-fallback font-serif">Schnauzer</div>
+                                    <img src="images/gallery_schnauzer.jpg" alt="Schnauzer nain épilation" class="gallery-img">
+                                </div>
+                                <div class="gallery-meta">
+                                    <h4>Schnauzer Nain</h4>
+                                    <span class="gallery-tag">Épilation Technique</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Golden Spa -->
+                        <div class="gallery-item" data-category="spa">
+                            <div class="gallery-card">
+                                <div class="gallery-image-box">
+                                    <div class="gallery-img-fallback font-serif">Golden</div>
+                                    <img src="images/gallery_golden.jpg" alt="Golden Retriever soin spa" class="gallery-img">
+                                </div>
+                                <div class="gallery-meta">
+                                    <h4>Golden Retriever</h4>
+                                    <span class="gallery-tag">Protocole Spa Aquapure</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Leonberg Grands -->
+                        <div class="gallery-item" data-category="grands">
+                            <div class="gallery-card">
+                                <div class="gallery-image-box">
+                                    <div class="gallery-img-fallback font-serif">Leonberg</div>
+                                    <img src="images/gallery_leonberg.jpg" alt="Leonberg grand gabarit" class="gallery-img">
+                                </div>
+                                <div class="gallery-meta">
+                                    <h4>Leonberg (75kg)</h4>
+                                    <span class="gallery-tag">Grand Gabarit / Sous-poil</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Cocker Epilation -->
+                        <div class="gallery-item" data-category="epilation">
+                            <div class="gallery-card">
+                                <div class="gallery-image-box">
+                                    <div class="gallery-img-fallback font-serif">Cocker</div>
+                                    <img src="images/gallery_cocker.jpg" alt="Cocker Anglais épilation" class="gallery-img">
+                                </div>
+                                <div class="gallery-meta">
+                                    <h4>Cocker Anglais</h4>
+                                    <span class="gallery-tag">Épilation & Peach Blossom</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Spitz Ciseaux -->
+                        <div class="gallery-item" data-category="ciseaux">
+                            <div class="gallery-card">
+                                <div class="gallery-image-box">
+                                    <div class="gallery-img-fallback font-serif">Spitz</div>
+                                    <img src="images/gallery_spitz.jpg" alt="Spitz Allemand coupe nounours" class="gallery-img">
+                                </div>
+                                <div class="gallery-meta">
+                                    <h4>Spitz Nain</h4>
+                                    <span class="gallery-tag">Coupe Ciseaux Nounours</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Journal du Salon -->
+                <div class="salon-journal mt-60">
+                    <div class="section-subheader text-center mb-30">
+                        <span class="section-tag">Le Journal du Salon</span>
+                        <h3>Les Actualités Récentes</h3>
+                    </div>
+                    
+                    <div class="journal-grid">
+                        <div class="journal-card">
+                            <div class="journal-date">Mars 2026</div>
+                            <h4>Nouvelle Enseigne & Nouvelle Identité</h4>
+                            <p>Nous avons le plaisir de vous faire découvrir notre toute nouvelle enseigne lumineuse et notre décor boisé et végétal en salon ! Un environnement encore plus zen et accueillant pour vos loulous.</p>
+                        </div>
+                        <div class="journal-card">
+                            <div class="journal-date">Mars 2026</div>
+                            <h4>Bienvenue à Aurélie dans l'équipe</h4>
+                            <p>Aurélie a débuté sa reconversion professionnelle avec brio. Elle prend grand soin de la partie bain, séchage physiologique doux et massages bien-être. Venez faire sa connaissance en salon !</p>
+                        </div>
+                        <div class="journal-card">
+                            <div class="journal-date">Permanent</div>
+                            <h4>Soutien Actif à la Cause Animale</h4>
+                            <p>Fidèles à nos valeurs de respect de la vie animale, nous collaborons avec l'association locale de protection pour réhabiliter esthétiquement les chiens recueillis et faciliter leur adoption.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Communauté / Réseaux Sociaux -->
+        <section id="communaute" class="community-section">
+            <div class="container">
+                <div class="community-layout">
+                    <!-- Left: Community Statistics -->
+                    <div class="community-info">
+                        <span class="section-tag">Notre Fierté</span>
+                        <h2 class="section-title">Une Communauté de 77 000+ Abonnés</h2>
+                        <p class="section-desc">Retrouvez-nous quotidiennement sur Facebook où nous partageons nos conseils, nos vidéos en direct, les transformations spectaculaires et le quotidien chaleureux du salon.</p>
+                        
+                        <div class="fb-stats-box">
+                            <div class="stat-circle">
+                                <span class="stat-number">77K+</span>
+                                <span class="stat-label">Abonnés</span>
+                            </div>
+                            <div class="stat-circle">
+                                <span class="stat-number">4.9/5</span>
+                                <span class="stat-label">Note Moyenne</span>
+                            </div>
+                        </div>
+                        
+                        <a href="https://www.facebook.com" target="_blank" class="btn btn-secondary-light btn-fb-join">
+                            <i class="fa-brands fa-facebook"></i> Nous Rejoindre sur Facebook
+                        </a>
+                    </div>
+                    
+                    <!-- Right: Testimonials Slider -->
+                    <div class="testimonials-column">
+                        <div class="testimonials-slider-container">
+                            <div class="testimonial-slide active">
+                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                                <p class="testimonial-text">"Manon est d'une douceur extraordinaire. Mon Leonberg qui a pourtant peur de l'eau s'est laissé toiletter et masser sans aucun stress. Le rituel Spa l'a complètement détendu. Je recommande les yeux fermés !"</p>
+                                <span class="testimonial-author">Sophie D. et Rocky (Leonberg) — Avis Facebook</span>
+                            </div>
+                            <div class="testimonial-slide">
+                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                                <p class="testimonial-text">"L'épilation de mon Cocker est parfaite à chaque visite. C'est un travail d'orfèvre qui prend du temps mais le résultat est juste magnifique. Et le parfum Peach Blossom sent divinement bon !"</p>
+                                <span class="testimonial-author">Jean-Marc T. et Marley (Cocker) — Avis Google</span>
+                            </div>
+                            <div class="testimonial-slide">
+                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                                <p class="testimonial-text">"Un grand merci à Manon et Aurélie pour l'accueil de ma petite bichonne très craintive. Tout est fait dans le respect et sans jamais forcer le chien. Un salon exceptionnel à Nîmes."</p>
+                                <span class="testimonial-author">Nathalie B. et Choupette (Bichon) — Avis Facebook</span>
+                            </div>
+                            
+                            <div class="testimonial-dots">
+                                <span class="dot active" data-index="0"></span>
+                                <span class="dot" data-index="1"></span>
+                                <span class="dot" data-index="2"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Prise de RDV en Ligne -->
+        <section id="reservation" class="booking-section">
+            <div class="container">
+                <div class="booking-wrapper">
+                    <div class="booking-intro">
+                        <span class="section-tag-light">Gain de temps</span>
+                        <h2 class="section-title text-white">Réservez en Ligne en quelques clics</h2>
+                        <p class="text-light">Sélectionnez la formule souhaitée, le profil de votre chien et choisissez le créneau horaire qui vous convient. Notre équipe prendra soin de confirmer votre rendez-vous par e-mail ou SMS.</p>
+                        
+                        <div class="booking-info-steps">
+                            <div class="info-step-item">
+                                <div class="info-step-circle">1</div>
+                                <span>Sélection de la formule & taille</span>
+                            </div>
+                            <div class="info-step-item">
+                                <div class="info-step-circle">2</div>
+                                <span>Choix du créneau horaire</span>
+                            </div>
+                            <div class="info-step-item">
+                                <div class="info-step-circle">3</div>
+                                <span>Informations de contact</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Booking Wizard Card -->
+                    <div class="booking-wizard-card" id="bookingWizard">
+                        <!-- Progress Indicator -->
+                        <div class="wizard-progress">
+                            <div class="progress-bar-fill" id="progressBar"></div>
+                            <span class="progress-step-text" id="progressStepText">Étape 1 sur 4</span>
+                        </div>
+                        
+                        <!-- Step 1: Dog Profile -->
+                        <div class="wizard-step active" id="step-1">
+                            <h3 class="step-title">1. Profil de votre Chien</h3>
+                            <p class="step-subtitle">Sélectionnez le gabarit de votre fidèle compagnon.</p>
+                            
+                            <div class="wizard-options-grid">
+                                <div class="wiz-option" data-value="small" data-step-val="Petit Chien (Yorkshire, Teckel, Bichon...)">
+                                    <i class="fa-solid fa-dog icon-size-s"></i>
+                                    <h5>Petit Chien</h5>
+                                    <span>Moins de 10 kg</span>
+                                </div>
+                                <div class="wiz-option" data-value="medium" data-step-val="Chien Moyen (Cocker, Cavalier King, Épagneul...)">
+                                    <i class="fa-solid fa-dog icon-size-m"></i>
+                                    <h5>Chien Moyen</h5>
+                                    <span>Entre 10 et 25 kg</span>
+                                </div>
+                                <div class="wiz-option" data-value="large" data-step-val="Grand Chien (Golden Retriever, Setter, Labrit...)">
+                                    <i class="fa-solid fa-dog icon-size-l"></i>
+                                    <h5>Grand Chien</h5>
+                                    <span>Entre 25 et 45 kg</span>
+                                </div>
+                                <div class="wiz-option" data-value="giant" data-step-val="Chien Géant (Leonberg, Terre-Neuve, Saint-Bernard...)">
+                                    <i class="fa-solid fa-dog icon-size-xl"></i>
+                                    <h5>Chien Géant</h5>
+                                    <span>Plus de 45 kg</span>
+                                </div>
+                            </div>
+                            
+                            <div class="wizard-actions">
+                                <div></div> <!-- Spacer -->
+                                <button type="button" class="btn btn-primary btn-next" disabled>Continuer <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2: Service Selection -->
+                        <div class="wizard-step" id="step-2">
+                            <h3 class="step-title">2. Type de Soin</h3>
+                            <p class="step-subtitle">Quelle formule d'exception souhaitez-vous lui accorder ?</p>
+                            
+                            <div class="wizard-services-list">
+                                <div class="wiz-service-item" data-value="spa" data-step-val="Protocole Spa Premium">
+                                    <div class="service-radio"></div>
+                                    <div class="service-info">
+                                        <h5>Protocole Spa Premium</h5>
+                                        <p>Masque Bioénergy, bain massant Aquapure, parfum Peach Blossom & soin aux 4 huiles précieuses.</p>
+                                    </div>
+                                    <div class="service-price">Dès 65€</div>
+                                </div>
+                                <div class="wiz-service-item" data-value="technique" data-step-val="Coupe Technique (Ciseaux d'Art ou Épilation)">
+                                    <div class="service-radio"></div>
+                                    <div class="service-info">
+                                        <h5>Coupe Technique aux Ciseaux / Épilation</h5>
+                                        <p>Soin de coupe d'art de précision sculpté aux ciseaux ou épilation à la main pour poils durs.</p>
+                                    </div>
+                                    <div class="service-price">Dès 75€</div>
+                                </div>
+                                <div class="wiz-service-item" data-value="standard" data-step-val="Entretien Standard">
+                                    <div class="service-radio"></div>
+                                    <div class="service-info">
+                                        <h5>Entretien Standard</h5>
+                                        <p>Bain, tonte hygiène, séchage doux et coupe légère des contours de la robe.</p>
+                                    </div>
+                                    <div class="service-price">Dès 45€</div>
+                                </div>
+                            </div>
+                            
+                            <div class="wizard-actions">
+                                <button type="button" class="btn btn-outline btn-prev"><i class="fa-solid fa-arrow-left"></i> Retour</button>
+                                <button type="button" class="btn btn-primary btn-next" disabled>Continuer <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 3: Date and Time -->
+                        <div class="wizard-step" id="step-3">
+                            <h3 class="step-title">3. Date & Heure</h3>
+                            <p class="step-subtitle">Choisissez votre créneau horaire préféré (Du Lundi au Vendredi).</p>
+                            
+                            <div class="calendar-booking-grid">
+                                <div class="datepicker-container">
+                                    <label for="booking-date" class="mb-10 block font-600">Sélectionnez un jour :</label>
+                                    <input type="date" id="booking-date" class="date-input">
+                                </div>
+                                
+                                <div class="timeslots-container">
+                                    <span class="block font-600 mb-10">Créneaux disponibles :</span>
+                                    <div class="timeslots-grid" id="timeslotsGrid">
+                                        <span class="no-date-msg">Veuillez d'abord sélectionner une date valide de semaine.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="wizard-actions">
+                                <button type="button" class="btn btn-outline btn-prev"><i class="fa-solid fa-arrow-left"></i> Retour</button>
+                                <button type="button" class="btn btn-primary btn-next" disabled>Continuer <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 4: Contact Info -->
+                        <div class="wizard-step" id="step-4">
+                            <h3 class="step-title">4. Vos Coordonnées</h3>
+                            <p class="step-subtitle">Complétez ces détails pour valider la demande de rendez-vous.</p>
+                            
+                            <form id="bookingContactForm" class="contact-form-grid">
+                                <div class="form-field-group">
+                                    <label for="client-name">Nom complet *</label>
+                                    <input type="text" id="client-name" required placeholder="Ex: Jean Dupont">
+                                </div>
+                                <div class="form-field-group">
+                                    <label for="client-phone">Numéro de téléphone *</label>
+                                    <input type="tel" id="client-phone" required placeholder="Ex: 06 12 34 56 78">
+                                </div>
+                                <div class="form-field-group">
+                                    <label for="dog-name">Nom du chien *</label>
+                                    <input type="text" id="dog-name" required placeholder="Ex: Rocky">
+                                </div>
+                                <div class="form-field-group">
+                                    <label for="dog-breed">Race du chien</label>
+                                    <input type="text" id="dog-breed" placeholder="Ex: Cocker Anglais">
+                                </div>
+                            </form>
+                            
+                            <!-- Summary Container -->
+                            <div class="booking-summary-box mt-20">
+                                <h5>Résumé de votre demande :</h5>
+                                <p id="summary-dog"></p>
+                                <p id="summary-service"></p>
+                                <p id="summary-datetime"></p>
+                            </div>
+                            
+                            <div class="wizard-actions">
+                                <button type="button" class="btn btn-outline btn-prev"><i class="fa-solid fa-arrow-left"></i> Retour</button>
+                                <button type="button" class="btn btn-primary" id="btnSubmitBooking">Confirmer le RDV <i class="fa-solid fa-check"></i></button>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 5: Success screen -->
+                        <div class="wizard-step text-center success-step" id="step-5">
+                            <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+                            <h3>Demande de Soin Reçue !</h3>
+                            <p>Merci pour votre confiance. Manon ou Aurélie analysera votre demande sous peu. Un SMS ou un e-mail de confirmation vous sera envoyé d'ici quelques minutes avec tous les détails pratiques.</p>
+                            
+                            <div class="confirmed-summary">
+                                <strong>Détails validés :</strong>
+                                <p id="final-summary-details"></p>
+                            </div>
+                            
+                            <button type="button" class="btn btn-primary mt-20" id="btnResetWizard">Prendre un autre RDV</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact & Informations Pratiques -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Où Nous Trouver</span>
+                    <h2 class="section-title">Informations Pratiques</h2>
+                    <p class="section-lead">Nous vous accueillons du Lundi au Vendredi dans notre havre de bien-être canin à Nîmes.</p>
+                </div>
+                
+                <div class="contact-grid">
+                    <!-- Info Card -->
+                    <div class="contact-info-card">
+                        <div class="info-block">
+                            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="info-text">
+                                <h4>Adresse du Salon</h4>
+                                <p>12 Rue de la République<br>30000 Nîmes (Gard)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-block">
+                            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="info-text">
+                                <h4>Téléphone</h4>
+                                <p><a href="tel:+33400000000">04 00 00 00 00</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-block">
+                            <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+                            <div class="info-text">
+                                <h4>Horaires d'Ouverture</h4>
+                                <p>Lundi - Vendredi : 8h30 - 17h30<br>Samedi & Dimanche : Fermé</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-block">
+                            <div class="info-icon"><i class="fa-solid fa-circle-info"></i></div>
+                            <div class="info-text">
+                                <h4>Accès & Parking</h4>
+                                <p>Situé à proximité des Arènes de Nîmes. Parking souterrain "Arènes" à 2 minutes de marche avec dépose-minute.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Map Component -->
+                    <div class="map-container-wrapper">
+                        <div id="salonMap" class="salon-map"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#accueil" class="logo font-serif text-white">
+                    <span class="logo-accent">Les Ciseaux</span> Canins
+                </a>
+                <p class="footer-desc">Le salon de toilettage d'élite à Nîmes. Des rituels spa bio et des coupes techniques d'exception au service du bien-être de vos chiens depuis 2015.</p>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://g.page" aria-label="Google Business"><i class="fa-brands fa-google"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Nos Collections</h4>
+                <ul>
+                    <li><a href="#soins">Protocole Spa Premium</a></li>
+                    <li><a href="#soins">Épilation Technique</a></li>
+                    <li><a href="#soins">Coupe Ciseaux d'Art</a></li>
+                    <li><a href="#soins">Grands Gabarits</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Le Salon</h4>
+                <ul>
+                    <li><a href="#apropos">À propos de Manon</a></li>
+                    <li><a href="#apropos">Rencontrer Aurélie</a></li>
+                    <li><a href="#galerie">Journal & Actualités</a></li>
+                    <li><a href="#communaute">Communauté Facebook</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h4>SEO Local & Mots-clés</h4>
+                <p class="seo-keywords">
+                    <em>Toiletteur chien Nîmes • Spa canin Gard • Coupe ciseaux d'exception • Épilation Cocker Cocker Spaniel • Toilettage Leonberg Nîmes • Cosmétique canine bio • Manon Sarrus Ciseaux Canins.</em>
+                </p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2026 Les Ciseaux Canins. Tous droits réservés. Toilettage d'élite à Nîmes.</p>
+                <div class="footer-legal">
+                    <a href="#">Mentions Légales</a>
+                    <a href="#">Politique de Confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal for dog photos -->
+    <div id="lightboxModal" class="lightbox-modal" aria-hidden="true" role="dialog">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <div class="lightbox-content-wrapper">
+            <img class="lightbox-image" id="lightboxImg" src="" alt="Photo de chien agrandie">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- Leaflet.js Map script (Loads first) -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    
+    <!-- Custom Application JS -->
+    <script src="app.js"></script>
+</body>
+</html>
