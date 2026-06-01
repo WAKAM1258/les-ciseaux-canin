@@ -5,24 +5,30 @@
 /* Variables & Design Tokens */
 :root {
     /* Color Palette */
-    --color-bg-cream: #FAF6F0;
+    --color-bg-cream: #FAF6F0; /* Keep warm beige base */
     --color-bg-white: #FFFFFF;
-    --color-sage-light: #F2F5F3;
-    --color-sage: #8F9E8B;
-    --color-sage-medium: #70816C;
-    --color-sage-dark: #4E5D4B;
-    --color-duck-blue: #0D5C75;
-    --color-duck-blue-light: #E7F1F4;
-    --color-duck-blue-dark: #073C4E;
-    --color-gold: #C5A059;
-    --color-gold-light: #F4EFEB;
-    --color-gold-dark: #A47D3B;
     
-    /* Neutrals */
-    --color-text-dark: #2B2F2A;
-    --color-text-muted: #626A60;
-    --color-border-light: #EBE5DB;
-    --color-border-sage: #DFE5E1;
+    /* Zen Pink (Rose Zen) replacing Sage */
+    --color-sage-light: #FAF1F3;  /* Very soft blush pink */
+    --color-sage: #D293A6;        /* Calming zen pink */
+    --color-sage-medium: #B57186; /* Medium rose pink */
+    --color-sage-dark: #7C3D50;   /* Rich berry/rose dark */
+    
+    /* Dark Violet replacing Duck Blue */
+    --color-duck-blue: #582C6A;       /* Elegant Zen Dark Violet */
+    --color-duck-blue-light: #F6EDF8; /* Soft lavender highlight */
+    --color-duck-blue-dark: #30133D;  /* Deep luxurious plum/violet */
+    
+    /* Rose Gold / Sand Accent replacing Gold */
+    --color-gold: #D2957D;        /* Warm rose gold */
+    --color-gold-light: #F8EFEA;  /* Soft sand highlight */
+    --color-gold-dark: #AA6B52;   /* Dark terracotta/gold */
+    
+    /* Neutrals (Tuned for the violet/pink warmth) */
+    --color-text-dark: #2D232E;    /* Dark plum-gray text */
+    --color-text-muted: #6C5D6F;   /* Muted warm mauve text */
+    --color-border-light: #EFE3E8; /* Light blush-gray border */
+    --color-border-sage: #E8D3D9;  /* Soft pink-gray border */
     
     /* Fonts */
     --font-serif: 'Cormorant Garamond', serif;

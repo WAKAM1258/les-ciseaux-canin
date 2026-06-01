@@ -649,7 +649,7 @@ document.addEventListener('DOMContentLoaded', () => {
             html: `<div style="
                 width: 32px; 
                 height: 32px; 
-                background-color: #C5A059; 
+                background-color: #D2957D; 
                 border: 3px solid #FFFFFF; 
                 border-radius: 50%; 
                 box-shadow: 0 4px 10px rgba(0,0,0,0.3);
@@ -693,7 +693,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 if (img) {
                     lightboxImg.src = img.src;
-                    lightboxCaption.innerHTML = `${title} <span style="font-size: 1rem; color: #C5A059; display: block; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 500; margin-top: 6px;">${tag}</span>`;
+                    lightboxCaption.innerHTML = `${title} <span style="font-size: 1rem; color: #D2957D; display: block; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 500; margin-top: 6px;">${tag}</span>`;
                     
                     // Show modal and trigger fade in
                     lightboxModal.style.display = 'flex';
