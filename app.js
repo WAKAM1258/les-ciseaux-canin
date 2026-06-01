@@ -687,7 +687,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (lightboxModal && lightboxImg && lightboxCaption && lightboxClose) {
         galleryCards.forEach(card => {
             card.addEventListener('click', () => {
-                const img = card.querySelector('.gallery-img');
+                const img = card.querySelector('img.gallery-img');
                 const title = card.querySelector('h4').textContent;
                 const tag = card.querySelector('.gallery-tag').textContent;
                 
